@@ -47,7 +47,7 @@ function Orders(props) {
 				</div>
 			)));
 	};
-	
+
 	return (
 		<main className="content">
 			<div className="top-block">
@@ -62,7 +62,7 @@ function Orders(props) {
 				: <PageInfo
 					title={'У вас нет заказов'}
 					description={'Вы нищеброд?  Оформите хотя бы один заказ.'}
-					imageUrl={'/img/cart-empty.png'}
+					imageUrl={'./img/cart-empty.png'}
 				/>
 			}
 		</main>

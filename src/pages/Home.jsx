@@ -38,7 +38,7 @@ function Home(props) {
 			<div className="top-block">
 				<h1>{props.searchValue ? `Поиск по запросу: "${props.searchValue}"` : "Все кроссовки"}</h1>
 				<div className="search">
-					<img width={16} height={16} src="/img/search.svg" alt="" />
+					<img width={16} height={16} src="./img/search.svg" alt="" />
 					<input placeholder="Поиск..." value={props.searchValue} onChange={props.onChangeSearchInput} />
 				</div>
 			</div>

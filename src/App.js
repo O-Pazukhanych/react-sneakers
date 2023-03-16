@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import axios from "axios";
 
@@ -76,11 +76,11 @@ function App() {
 			<div className="wrapper">
 				<Drawer items={cartItems}
 					onClose={() => setIsCartOpened(false)}
-					onRemoveItem={onRemoveItem} 
-					isCartOpened={isCartOpened}/>
+					onRemoveItem={onRemoveItem}
+					isCartOpened={isCartOpened} />
 				<Header onClickCart={() => setIsCartOpened(true)} />
 				<Routes>
-					<Route path="/" exact element={
+					<Route path="/react-sneakers/" exact element={
 						<Home
 							searchValue={searchValue}
 							onChangeSearchInput={onChangeSearchInput} />

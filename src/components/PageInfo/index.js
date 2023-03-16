@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import styles from './PageInfo.module.scss';
 
-function PageInfo({title, description, imageUrl }) {
+function PageInfo({ title, description, imageUrl }) {
 	return (
 		<div className={styles.canvas}>
 			<img src={imageUrl} alt='' />
@@ -12,7 +12,7 @@ function PageInfo({title, description, imageUrl }) {
 			<Link to={'/'}>
 				<button className="btn btn_return">
 					<span>Вернуться назад</span>
-					<img src="/img/btn-arrow.svg" alt="" />
+					<img src="./img/btn-arrow.svg" alt="" />
 				</button>
 			</Link>
 		</div>

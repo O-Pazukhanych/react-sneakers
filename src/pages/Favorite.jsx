@@ -47,7 +47,7 @@ function Favorite(props) {
 				: <PageInfo
 					title={'Закладок нет :('}
 					description={'Вы ничего не добавляли в закладки'}
-					imageUrl={'/img/cart-empty.png'}
+					imageUrl={'./img/cart-empty.png'}
 				/>
 			}
 		</main>

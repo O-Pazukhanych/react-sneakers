@@ -35,7 +35,7 @@ function Drawer(props) {
 	return (
 		<div className={`${styles.drawer} ${props.isCartOpened && styles._active}`}>
 			<div className={`${styles.drawer__body} ${props.isCartOpened && styles._active}`}>
-				<h2>Корзина <img className={styles.drawer__btn} src="/img/btn-remove.svg" alt=""
+				<h2>Корзина <img className={styles.drawer__btn} src="./img/btn-remove.svg" alt=""
 					onClick={props.onClose} /></h2>
 
 				{props.items.length > 0 ?
@@ -55,7 +55,7 @@ function Drawer(props) {
 					: <CartInfo
 						title={isOrderComplete ? 'Заказ оформлен!' : 'Корзина пустая'}
 						description={isOrderComplete ? `Ваш заказ #${orderId} скоро будет передан курьерской доставке` : 'Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.'}
-						imageUrl={isOrderComplete ? '/img/order-complete.png' : '/img/cart-empty.png'}
+						imageUrl={isOrderComplete ? './img/order-complete.png' : './img/cart-empty.png'}
 						onClose={props.onClose} />
 				}
 
@@ -75,7 +75,7 @@ function Drawer(props) {
 						</ul>
 						<button className="btn" onClick={onClickOrder}>
 							<span>Оформить заказ</span>
-							<img src="/img/btn-arrow.svg" alt="" />
+							<img src="./img/btn-arrow.svg" alt="" />
 						</button>
 					</div>
 				}

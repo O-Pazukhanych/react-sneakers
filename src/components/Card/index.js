@@ -6,7 +6,7 @@ import styles from './Card.module.scss';
 import CardLoading from '../CardLoading';
 
 function Card(props) {
-	const {isItemAdded} = React.useContext(AppContext);
+	const { isItemAdded } = React.useContext(AppContext);
 	const [isFavorite, setIsFavorite] = React.useState(props.isFavorite);
 
 	const onClickFavorite = () => {
@@ -24,7 +24,7 @@ function Card(props) {
 			</div>
 			: <div className={styles.card}>
 				<div className={styles.card__favorite}>
-					<img src={isFavorite ? "/img/favorite-active.svg" : "/img/favorite-disable.svg"} alt=''
+					<img src={isFavorite ? "./img/favorite-active.svg" : "./img/favorite-disable.svg"} alt=''
 						onClick={onClickFavorite} />
 				</div>
 				<img width={133} height={112} src={props.imageUrl} alt="" />
@@ -34,7 +34,7 @@ function Card(props) {
 						<span>Цена: </span>
 						<b>{props.price} руб.</b>
 					</div>
-					<img width={32} height={32} src={isItemAdded(props.id) ? "/img/added.svg" : "/img/plus.svg"} alt=""
+					<img width={32} height={32} src={isItemAdded(props.id) ? "./img/added.svg" : "./img/plus.svg"} alt=""
 						onClick={onClickAdd} />
 				</div>
 			</div>

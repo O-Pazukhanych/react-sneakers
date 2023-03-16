@@ -8,7 +8,7 @@ function CartItem(props) {
 				<p>{props.title}</p>
 				<b>{props.price} руб.</b>
 			</div>
-			<img className={styles.cart_item__btn} src="/img/btn-remove.svg" alt=""
+			<img className={styles.cart_item__btn} src="./img/btn-remove.svg" alt=""
 				onClick={() => props.onRemoveItem(props)} />
 		</div>
 	)
