@@ -1,0 +1,19 @@
+.canvas{
+	text-align: center;
+	h2{
+		font-weight: 600;
+		font-size: 22px;
+		line-height: calc(27px/22px);
+		margin-bottom: 10px;
+	}
+	P{
+		font-size: 16px;
+		line-height: calc(24px/16px);
+		opacity: 0.4;
+		margin-bottom: 40px;
+	}
+	button{
+		max-width: 250px;
+		margin: 0 auto;
+	}
+}

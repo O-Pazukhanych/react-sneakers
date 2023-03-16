@@ -1,0 +1,122 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*::before,*::after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+header,footer,nav,aside,section{display: block;}
+html,body{height: 100%;width: 100%;margin: 0;padding: 0;min-width: 320px;position: relative;color: #000;}
+body{font-size: 100%;line-height: 1;font-size: 14px;font-family: system-ui;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family: system-ui;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
+
+html,body{
+	scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #E7F6FF;
+  >div{
+	padding: 85px 0;
+  }
+	overflow-x: hidden;
+}
+
+.wrapper{
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+	border-radius: 20px;
+	max-width: 1080px;
+	margin: 0px auto;
+	min-height: 80vh;
+}
+
+.content{
+	padding: 45px;
+}
+
+.top-block{
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	h1{
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 1;
+	}
+	.search{
+		min-width: 260px;
+		height: 45px;
+		border: 1px solid #F3F3F3;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		padding: 0 18px;
+		img{
+			margin-right: 13px;
+		}
+		input{
+			&::placeholder{
+				color: #C4C4C4;
+			}
+		}
+	}
+}
+
+.cards{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -20px;
+	&__column{
+		flex: 0 1 25%;
+		padding: 0 20px;
+		margin-bottom: 40px;
+	}
+}
+
+.btn{
+	width: 100%;
+	height: 55px;
+	background: #9DD558;
+	border-radius: 18px;
+	position: relative;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s ease 0s;
+	&:hover{
+		background: #8cc34a;
+	}
+	span{
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 1;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	img{
+		position: absolute;
+		right: 30px;
+	}
+	&_return{
+		img{
+			left: 30px;
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.body_lock{
+	overflow: hidden;
+}

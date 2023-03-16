@@ -1,0 +1,22 @@
+.cart_item{
+	display: flex;
+	align-items: center;
+	background: #FFFFFF;
+	border: 1px solid #F3F3F3;
+	border-radius: 20px;
+	padding: 20px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	&__content_img{
+		margin-right: 20px;
+	}
+	&__btn{
+		cursor: pointer;
+	}
+	div{
+		p{
+			line-height: 1.4;
+			margin-bottom: 8px;
+		}
+	}
+}
